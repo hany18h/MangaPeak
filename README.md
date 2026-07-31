@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="docs/images/app-icon.png" alt="Manga Peak" width="120" />
+  <img src="docs/images/manga-peak-logo.webp" alt="Manga Peak logo" width="140" />
 
   # Manga Peak | مانجا بيك
 
@@ -28,17 +28,6 @@
 - مزامنة ونسخ احتياطي وتكاملات تتبع اختيارية.
 - دعم Android 6.0 وما بعده.
 
-## صور من التطبيق
-
-<div align="center">
-  <img src="docs/images/screenshot-1.png" alt="السجل" width="230" />
-  <img src="docs/images/screenshot-2.png" alt="المفضلة" width="230" />
-  <img src="docs/images/screenshot-3.png" alt="استكشاف المصادر" width="230" />
-  <img src="docs/images/screenshot-4.png" alt="تفاصيل العمل" width="230" />
-  <img src="docs/images/screenshot-5.png" alt="القارئ" width="230" />
-  <img src="docs/images/screenshot-6.png" alt="التنزيلات" width="230" />
-</div>
-
 ## بنية المشروع
 
 | المسار | المحتوى |
@@ -46,7 +35,7 @@
 | `app/` | تطبيق Android والاختبارات والموارد |
 | `kotatsu-parsers/` | كود مصادر المانجا والروايات والأنمي المستخدم في التطبيق |
 | `gradle/` | Gradle Wrapper وكتالوج الإصدارات |
-| `docs/images/` | الصور المستخدمة في هذا الملف |
+| `docs/images/` | لوجو Manga Peak المستخدم في هذا الملف |
 
 ## متطلبات البناء
 
@@ -58,8 +47,8 @@
 ## تشغيل نسخة التطوير
 
 ```bash
-git clone https://github.com/hema995/Mangapeak.git
-cd Mangapeak
+git clone https://github.com/mangapeak/MangaPeak.git
+cd MangaPeak
 ./gradlew :app:assembleDebug
 ```
 
