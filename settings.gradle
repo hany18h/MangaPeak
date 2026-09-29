@@ -30,18 +30,3 @@ dependencyResolutionManagement {
 
 include ':app'
 rootProject.name = "MangaPeak"
-
-// Resolve the pinned parser revision from JitPack by default. Developers can
-// opt into the bundled checkout with -PuseLocalParsers=true.
-def localParsers = file('kotatsu-parsers')
-def useLocalParsers = providers.gradleProperty('useLocalParsers')
-	.orElse('false')
-	.get()
-	.toBoolean()
-if (useLocalParsers && localParsers.isDirectory()) {
-	includeBuild(localParsers) {
-		dependencySubstitution {
-			substitute module('com.github.hany18h:kotatsu-parsers') using project(':')
-		}
-	}
-}
