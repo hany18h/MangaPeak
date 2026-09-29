@@ -31,11 +31,11 @@ dependencyResolutionManagement {
 include ':app'
 rootProject.name = "MangaPeak"
 
-// The maintained parser fork is bundled with this repository so a checkout
-// contains the complete source used by the application.
+// Resolve the pinned parser revision from JitPack by default. Developers can
+// opt into the bundled checkout with -PuseLocalParsers=true.
 def localParsers = file('kotatsu-parsers')
 def useLocalParsers = providers.gradleProperty('useLocalParsers')
-	.orElse('true')
+	.orElse('false')
 	.get()
 	.toBoolean()
 if (useLocalParsers && localParsers.isDirectory()) {
